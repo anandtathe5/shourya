@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippet</title>
+    <link rel="stylesheet" href="inst.css">
+</head>
+<body>
+    
+<body>
+    <div class="container">
+        <h1>Installation Guide for Shourya Framework</h1>
+        <p>To install the Shourya framework, follow these simple steps:</p>
+        <ol>
+            <li> use code below in your file</li>
+        </ol>
+        <pre><code>&lt;script src="path/to/shourya.js"&gt;&lt;/script&gt;</code></pre>
+        <ol start="2">
+            <li>Include the Shourya framework in your HTML file:</li>
+        </ol>
+        <pre><code>&lt;script&gt;
+    const shouryaApp = new Shourya();
+&lt;/script&gt;</code></pre>
+        <p>Congratulations! You have successfully installed the Shourya framework. You can now start building amazing web applications with ease.</p>
+        <div class="highlight">
+            <p><strong>Note:</strong> Make sure to replace <code>path/to/shourya.js</code> with the actual path to the Shourya framework file.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+    <pre class="code-snippet">
+        <code>
+            const app = await shouryaApp;
+            
+            const model = await app.getObject('rJFbvG'); // It's a table
+            const modelLayout = await model.getLayout();
+            
+            const data = [];
+            const columns = modelLayout.qHyperCube.qSize.qcx;
+            const totalheight = modelLayout.qHyperCube.qSize.qcy;
+            // Replace pageheight & numberOfPages number with the comments to get all data
+            const pageheight = 5 // Math.floor(10000 / columns);
+            const numberOfPages = 3 // Math.ceil(totalheight / pageheight);
+            
+            for (let i = 0; i < numberOfPages; i++) {
+                const page = {
+                    qTop: pageheight * i,
+                    qLeft: 0,
+                    qWidth: columns,
+                    qHeight: pageheight,
+                };
+                const row = await model.getHyperCubeData('/qHyperCubeDef', [page]);
+                data.push(...row[0].qMatrix);
+            }
+        </code>
+    </pre>
+</body>
+</html>

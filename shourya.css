@@ -1,0 +1,123 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+header:hover {
+    background-color: #ff6c00;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+
+
+p {
+    margin: 10px 0;
+    color: #444;
+    transition: color 0.5s ease;
+}
+
+p:hover {
+    color: #666;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+code {
+    background-color: #f8f8f8;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* New CSS for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    section {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+    }
+
+    footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    ul {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+    }
+
+    code {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    pre {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    /* Adjustments for specific elements */
+    pre code {
+        font-size: inherit; /* Ensure code inside pre maintains proper font size */
+    }
+
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
