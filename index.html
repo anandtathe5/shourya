@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shourya.js - A Framework for Ambitious Web Developers</title>
+    <link rel="stylesheet" href="index.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,9 +70,25 @@
         }
 
         .btn:hover {
-            background-color: #ff8533;
+            background-color: #33ffff;
+        }
+        .btnt {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
 
+        .btn:hovert {
+            background-color: #33ffff;
+        }
+       
         /* Existing CSS styles */
 
         /* New CSS for mobile responsiveness */
@@ -108,19 +126,7 @@
                 list-style: none; /* Remove default list style */
             }
 
-            li {
-                background-color: #007bff; /* Blue background for list items */
-                color: #fff; /* White text color for list items */
-                padding: 10px; /* Add padding to list items */
-                margin-bottom: 10px; /* Add margin between list items */
-                border-radius: 5px; /* Add border radius to list items */
-            }
-
-            /* Add hover effect to list items */
-            li:hover {
-                background-color: #0056b3; /* Darker blue on hover */
-            }
-
+            
             /* Add animation to footer */
             footer {
                 animation: fadeIn 1s ease; /* Apply fade-in animation to footer */
@@ -131,27 +137,16 @@
         
 
         
-        /* Add hover effect to list items */
-        li:hover {
-            background-color: #0b7dda; /* Darker blue on hover */
-        }
-        .background-container {
-  position: relative; /* Ensure the container is positioned */
-  width: 100%; /* Adjust width as needed */
-  height: 100vh; /* Adjust height as needed */
-  background-image: url('bg.jpg');
-  background-size: cover;
-  background-position: center;
-}
+    
 
 
 
 
     </style>
 </head>
-<body>
+
      
-    
+   
 
     <div class="container">
         <img src="shourya.jpg" alt="Shourya.js Framework Logo" class="framework-logo">
@@ -160,14 +155,28 @@
     
     <h2>Why Choose Shourya.js?</h2>
     <p>Shourya.js provides a comprehensive set of tools and features to empower developers and teams to build ambitious web applications:</p>
-    <ul>
-        <li>Batteries included: Shourya.js comes with everything you need to start building on day one and keep shipping for years.</li>
-        <li>Scalable UI architecture: Built-in support for scalable UI architecture ensures that your application remains maintainable and performant as it grows.</li>
-        <li>Robust routing: Ember's built-in router is a best-in-class solution that incorporates async data loading and dynamic URL handling.</li>
-        <li>Modern testing harness: Enjoy a fully-featured testing harness built into every application by default, supporting multiple levels of testing.</li>
-        <li>Holistic performance approach: Built on the Glimmer rendering engine, Shourya.js delivers blazing-fast performance out of the box.</li>
-    </ul>
-    
+    <div class="container">
+        <div class="feature">
+            <h3>Batteries included</h3>
+            <p>Shourya.js comes with everything you need to start building on day one and keep shipping for years.</p>
+        </div>
+        <div class="feature">
+            <h3>Scalable UI architecture</h3>
+            <p>Built-in support for scalable UI architecture ensures that your application remains maintainable and performant as it grows.</p>
+        </div>
+        <div class="feature">
+            <h3>Robust routing</h3>
+            <p>Ember's built-in router is a best-in-class solution that incorporates async data loading and dynamic URL handling.</p>
+        </div>
+        <div class="feature">
+            <h3>Modern testing harness</h3>
+            <p>Enjoy a fully-featured testing harness built into every application by default, supporting multiple levels of testing.</p>
+        </div>
+        <div class="feature">
+            <h3>Holistic performance approach</h3>
+            <p>Built on the Glimmer rendering engine, Shourya.js delivers blazing-fast performance out of the box.</p>
+        </div>
+    </div>
     <h2>Getting Started</h2>
     <p>If you're ready to dive in and start building with Shourya.js, check out the quickstart guide or dive into the comprehensive guides for detailed instructions on getting started with Shourya.js.</p>
     
@@ -179,6 +188,55 @@
     
     <p>Start shipping today with Shourya.js - the framework for ambitious web developers!</p>
 </div>
+</lang>
+</body>
+<!-- Button to open the modal -->
 
+    
+<!--button onclick="openModal()">Open Video</!--button-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <!--div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="video-container">
+        <!-- Embedded video -->
+        <!--iframe width="560" height="315" src="popup.mp4" frameborder="0" allowfullscreen></!--iframe>
+    </div>
+  </!--div>
+<!--div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<a href="https://twitter.com/AnandTatheMaha1" target="_blank">
+    <button class="btnt">Contact Us on Twitter</button>
+</a>
 </body>
 </html>
